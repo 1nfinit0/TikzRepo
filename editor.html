@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor TikZ</title>
+
+  <link rel="stylesheet" href="css/editor-styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Monaco loader -->
+  <script src="https://unpkg.com/monaco-editor@0.45.0/min/vs/loader.js"></script>
+</head>
+
+<body>
+<header>
+  <div class="headerContainer">
+    <a href="./index.html"><span>TikzRepo</span></a>
+    <nav class="toggleNav"></nav>
+  </div>
+</header>
+
+<main>
+  <h1>Editor TikZ</h1>
+
+  <div class="container">
+    
+    <div id="editor" class="editor"></div>
+
+    <div class="controls">
+      <button id="update">Render</button>
+    </div>
+
+    <div class="viewer-container" id="viewer-container"></div>
+
+  </div>
+</main>
+
+<footer>Star me here --> <a href="https://github.com/1nfinit0/TikzRepo">https://github.com/1nfinit0/TikzRepo</a></footer>
+
+<script type="module" src="js/editor.js"></script>
+
+<script>
+  require.config({ paths: { vs: 'https://unpkg.com/monaco-editor@0.45.0/min/vs' }});
+
+  require(['vs/editor/editor.main'], function () {
+    window.editor = monaco.editor.create(
+      document.getElementById('editor'),
+      {
+        value: '',
+        language: 'markdown',
+        theme: 'vs-dark',
+        automaticLayout: true,
+        fontSize: 14,
+        minimap: { enabled: false },
+        
+      }
+    );
+
+    window.dispatchEvent(new Event("monaco-ready"));
+  });
+</script>
+
+</body>
+</html>

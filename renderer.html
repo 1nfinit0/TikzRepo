@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renderer TikZ</title>
+
+  <link rel="stylesheet" href="https://tikzjax.com/v1/fonts.css">
+  <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+  <style>
+    html { 
+      height: 100%; 
+      overflow: hidden; 
+    } 
+    body { 
+      height: 100%; 
+      margin: 0; 
+      padding: 10px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+    }
+    div { 
+      max-width: 100%; 
+      box-sizing: border-box; 
+      position: relative; 
+    } 
+    svg { 
+      max-width: 100%; 
+      height: auto; 
+    }
+  </style>
+</head>
+<body>
+
+<script type="module">
+  import { graphics } from "../js/data.js";
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  const graphic = graphics.find(g => g.id === id);
+
+  if (!graphic) {
+    document.body.innerHTML = "<p>Graphic not found</p>";
+  } else {
+    const libs = graphic.libraries || [];
+    const preamble = libs.length
+      ? `\\usetikzlibrary{${libs.join(",")}}\n`
+      : "";
+
+    const script = document.createElement("script");
+    script.type = "text/tikz";
+    script.textContent = preamble + graphic.tikz;
+
+    document.body.appendChild(script);
+
+
+    const observer = new MutationObserver(() => {
+      const svg = document.querySelector("svg");
+      if (svg) {
+        window.parent.postMessage(
+          { type: "tikz-ready", id },
+          "*"
+        );
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  }
+</script>
+
+</body>
+</html>

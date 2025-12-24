@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Renderer Editor TikZ</title>
+
+  <link rel="stylesheet" href="https://tikzjax.com/v1/fonts.css">
+  <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+  <style>
+    html { 
+      height: 100%; 
+      overflow: hidden;
+    } 
+    body { 
+      height: 100%; 
+      margin: 0; 
+      padding: 10px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+    }
+    div { 
+      max-width: 100%; 
+      box-sizing: border-box; 
+      position: relative; 
+    } 
+    svg { 
+      max-width: 100%; 
+      height: auto; 
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  const code = localStorage.getItem("tikz-code");
+
+  if (!code) {
+    document.body.innerHTML = "<p>No TikZ code</p>";
+  } else {
+    const s = document.createElement("script");
+    s.type = "text/tikz";
+    s.textContent = code;
+    document.body.appendChild(s);
+  }
+</script>
+
+</body>
+</html>
