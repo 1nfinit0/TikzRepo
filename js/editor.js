@@ -1,4 +1,4 @@
-import { graphics } from "../js/data.js";
+import { graphics } from "js/data.js";
 
 const button = document.getElementById("update");
 const viewerContainer = document.getElementById("viewer-container");

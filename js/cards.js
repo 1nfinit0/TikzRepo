@@ -1,4 +1,4 @@
-import { graphics } from "../js/data.js";
+import { graphics } from "js/data.js";
 
 const container = document.querySelector(".cardsContainer");
 
