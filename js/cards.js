@@ -3,12 +3,12 @@ import { graphics } from "/TikzRepo/js/data.js";
 const container = document.querySelector(".cardsContainer");
 
 // 🔹 últimos gráficos (asumimos que data.js está en orden cronológico)
-export function getLatestGraphics(n = 6) {
+export function getLatestGraphics(n = 9) {
   return graphics.slice(-n).reverse();
 }
 
 // 🔹 gráficos aleatorios
-export function getRandomGraphics(n = 6) {
+export function getRandomGraphics(n = 9) {
   return [...graphics]
     .sort(() => Math.random() - 0.5)
     .slice(0, n);
