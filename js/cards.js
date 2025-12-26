@@ -8,7 +8,7 @@ export function getLatestGraphics(n = 9) {
 }
 
 // 🔹 gráficos aleatorios
-export function getRandomGraphics(n = 9) {
+export function getRandomGraphics(n = 5) {
   return [...graphics]
     .sort(() => Math.random() - 0.5)
     .slice(0, n);
