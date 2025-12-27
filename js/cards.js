@@ -3,7 +3,7 @@ import { graphics } from "/TikzRepo/js/data.js";
 const container = document.querySelector(".cardsContainer");
 
 // 🔹 últimos gráficos (asumimos que data.js está en orden cronológico)
-export function getLatestGraphics(n = 9) {
+export function getLatestGraphics(n = 5) {
   return graphics.slice(-n).reverse();
 }
 

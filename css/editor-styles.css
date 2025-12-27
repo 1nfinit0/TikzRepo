@@ -1,15 +1,20 @@
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 * header, footer {
   background-color: #222;
   color: #fff;
@@ -98,4 +103,7 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
+}
+.editor {
+  font-size: 14px;
 }
