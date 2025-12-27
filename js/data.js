@@ -270,7 +270,9 @@ export const graphics = [
     keywords: ["physics", "dynamics", "forces", "pulleys", "inclined planes", "mechanics", "diagrams", "education", "statics"],
     tikz: ` \\begin{tikzpicture}[scale=1]
       \\draw[line width=1mm] (-3,1.5) -- (5,1.5);
-      \\foreach \\x in {-3,-2.5,...,5} { \\draw[thick] (\\x,2) -- (\\x,1.8); } \\foreach \\x in {-2.75,-2.25,...,4.75} { \\draw[thick] (\\x,1.8) -- (\\x,1.6); } \\draw[fill=gray!30] (0,0) rectangle (2,-1);
+      \\foreach \\x in {-3,-2.5,...,5} { \\draw[thick] (\\x,2) -- (\\x,1.8); }
+\\foreach \\x in {-2.75,-2.25,...,4.75} { \\draw[thick] (\\x,1.8) -- (\\x,1.6); }
+\\draw[fill=gray!30] (0,0) rectangle (2,-1);
       \\node at (1,-0.5) {3 kg};
       \\draw[thick] (0,0) -- (-2,1.5);
       \\node[above] at (-2,2) {};
@@ -290,7 +292,9 @@ export const graphics = [
     keywords: ["physics", "thermodynamics", "systems", "diagrams", "education", "mechanics"],
     tikz: ` \\begin{tikzpicture}
       \\draw[line width=1mm] (-1.5,4.5) -- (1.5,4.5);
-      \\foreach \\x in {-1.5,-1,...,1.5} { \\draw[thick] (\\x,5) -- (\\x,4.8); } \\foreach \\x in {-1.25,-0.75,...,1.25} { \\draw[thick] (\\x,4.8) -- (\\x,4.6); } \\draw[line width=0.5mm] (-0.5,3.4) circle(0.3);
+      \\foreach \\x in {-1.5,-1,...,1.5} { \\draw[thick] (\\x,5) -- (\\x,4.8); }
+\\foreach \\x in {-1.25,-0.75,...,1.25} { \\draw[thick] (\\x,4.8) -- (\\x,4.6); }
+\\draw[line width=0.5mm] (-0.5,3.4) circle(0.3);
       \\draw[line width=0.5mm] (0.1,2) circle(0.3);
       \\draw[thick] (-0.81,1) -- (-0.81,3.5);
       \\draw[fill=black] (-0.81,2) circle (2pt);
@@ -314,7 +318,9 @@ export const graphics = [
     keywords: ["physics", "thermodynamics", "systems", "diagrams", "education", "mechanics"],
     tikz: ` \\begin{tikzpicture}
       \\draw[line width=1mm] (-1.5,4.5) -- (1.5,4.5);
-      \\foreach \\x in {-1.5,-1,...,1.5} { \\draw[thick] (\\x,5) -- (\\x,4.8); } \\foreach \\x in {-1.25,-0.75,...,1.25} { \\draw[thick] (\\x,4.8) -- (\\x,4.6); } \\draw[line width=0.5mm] (-0.5,3.4) circle(0.3);
+      \\foreach \\x in {-1.5,-1,...,1.5} { \\draw[thick] (\\x,5) -- (\\x,4.8); }
+\\foreach \\x in {-1.25,-0.75,...,1.25} { \\draw[thick] (\\x,4.8) -- (\\x,4.6); }
+\\draw[line width=0.5mm] (-0.5,3.4) circle(0.3);
       \\draw[thick] (-0.81,1) -- (-0.81,3.5);
       \\node at (1.2,3) {$T$};
       \\draw[thick] (2.21,2) -- (-0.21,3.5);
@@ -340,7 +346,8 @@ export const graphics = [
       \\draw[thick] (4,0) -- (4,2.31);
       \\begin{scope}[rotate around={30:(0.9,1.97)}] \\draw[fill=gray!30] (1.2,0.7) rectangle (1.8,1.3);
       \\node at (1.5,1) {$m$};
-      \\end{scope} \\draw (0.7,0) arc[start angle=0, end angle=30, radius=0.7];
+      \\end{scope}
+\\draw (0.7,0) arc[start angle=0, end angle=30, radius=0.7];
       \\node at (1,0.18) {$30^\\circ$};
       \\draw[thick] (-0.5,0) -- (4.5,0);
       \\end{tikzpicture} `,
@@ -395,7 +402,8 @@ export const graphics = [
       \\draw[->] (0,-7) -- (0,1.2) node[above] {$y$};
       \\node[below left] at (0,0) {0};
       \\draw (0.1,-3.5) -- (-0.1,-3.5) node[right] {$-3.5$};
-      \\pgfmathsetmacro{\\xcoord}{-3.5*sqrt(3)} \\draw (\\xcoord,0.1) -- (\\xcoord,-0.1) node[above] {$-3.5\\sqrt{3}$};
+      \\pgfmathsetmacro{\\xcoord}{-3.5*sqrt(3)}
+\\draw (\\xcoord,0.1) -- (\\xcoord,-0.1) node[above] {$-3.5\\sqrt{3}$};
       \\fill[red] (\\xcoord,-3.5) circle (2.5pt);
       \\draw[dashed] (\\xcoord,0) -- (\\xcoord,-3.5) -- (0,-3.5);
       \\end{tikzpicture} `,
@@ -435,7 +443,9 @@ export const graphics = [
     keywords: ["mathematics", "geometry", "polar coordinates", "diagrams", "education"],
     tikz: ` \\begin{tikzpicture}[scale=0.25]
       \\foreach \\R in {1,3,...,13} { \\draw[gray!30] (0,0) circle (\\R);
-      \\node[left] at (0,\\R) {$\\R$}; } \\foreach \\ang in {0,30,...,330} { \\draw[gray!30] (0,0) -- (\\ang:14); } \\draw[->, thick] (0,0) -- (14,0) node[right] {$0^\\circ$};
+      \\node[left] at (0,\\R) {$\\R$}; }
+\\foreach \\ang in {0,30,...,330} { \\draw[gray!30] (0,0) -- (\\ang:14); }
+\\draw[->, thick] (0,0) -- (14,0) node[right] {$0^\\circ$};
       \\draw[->, thick] (0,0) -- (90:14) node[above] {$90^\\circ$};
       \\draw[->, thick] (0,0) -- (180:14) node[left] {$180^\\circ$};
       \\draw[->, thick] (0,0) -- (270:14) node[below] {$270^\\circ$};
@@ -457,7 +467,9 @@ export const graphics = [
     keywords: ["mathematics", "geometry", "polar coordinates", "curves", "diagrams", "education"],
     tikz: ` \\begin{tikzpicture}[scale=0.25]
       \\foreach \\r in {2,4,6,8,10,12} { \\draw[gray!30] (0,0) circle (\\r);
-      \\node[left] at (0,\\r) {$\\r$}; } \\foreach \\angle in {0,30,...,330} { \\draw[gray!30] (0,0) -- (\\angle:13); } \\draw[->, thick] (0,0) -- (13,0) node[right] {$0^\\circ$};
+      \\node[left] at (0,\\r) {$\\r$}; }
+\\foreach \\angle in {0,30,...,330} { \\draw[gray!30] (0,0) -- (\\angle:13); }
+\\draw[->, thick] (0,0) -- (13,0) node[right] {$0^\\circ$};
       \\draw[->, thick] (0,0) -- (90:13) node[above] {$90^\\circ$};
       \\draw[->, thick] (0,0) -- (180:13) node[left] {$180^\\circ$};
       \\draw[->, thick] (0,0) -- (270:13) node[below] {$270^\\circ$};
@@ -538,8 +550,10 @@ export const graphics = [
     tikz: ` \\begin{tikzpicture}[scale=0.35]
       \\draw[thick] (-0.5,0) -- (18,0) node[right] {x};
       \\draw[thick] (0,-0.5) -- (0,10) node[above] {y};
-      \\foreach \\x in {0,4,8,12,16} \\draw (\\x,0.12) -- (\\x,-0.12) node[below] {\\x};
-      \\foreach \\y in {0,2,4,6,8} \\draw (0.12,\\y) -- (-0.12,\\y) node[left] {\\y};
+      \\foreach \\x in {0,4,8,12,16}
+\\draw (\\x,0.12) -- (\\x,-0.12) node[below] {\\x};
+      \\foreach \\y in {0,2,4,6,8}
+\\draw (0.12,\\y) -- (-0.12,\\y) node[left] {\\y};
       \\fill[green!30,opacity=0.5] plot[domain=0:16,smooth,variable=\\x] ({\\x},{2*sqrt(\\x)}) -- plot[domain=16:0,smooth,variable=\\x] ({\\x},{\\x/2}) -- cycle;
       \\draw[domain=0:16,smooth,variable=\\x,blue,thick] plot ({\\x},{2*sqrt(\\x)}) node[xshift=-100pt, yshift=-15pt] {$y=2\\sqrt{x}$};
       \\draw[domain=0:16,smooth,variable=\\x,red,thick] plot ({\\x},{\\x/2}) node[xshift=-80pt, yshift=-55pt] {$y=\\tfrac{x}{2}$};
@@ -634,7 +648,8 @@ export const graphics = [
     categories: ["physics"],
     keywords: ["physics", "magnetism", "magnetic fields", "current-carrying wire", "diagrams", "education", "electromagnetism"],
     tikz: ` \\begin{tikzpicture}[scale=1, every node/.style={font=\\small}]
-      \\foreach \\x in {-2,-1,...,2}{ \\foreach \\y in {-2,-1,...,2}{ \\node at (\\x,\\y) {\\small $\\times$}; } } \\draw[->, thick] (0,0) -- (1,-1) node[right] {$\\vec v$};
+      \\foreach \\x in {-2,-1,...,2}{ \\foreach \\y in {-2,-1,...,2}{ \\node at (\\x,\\y) {\\small $\\times$}; } }
+\\draw[->, thick] (0,0) -- (1,-1) node[right] {$\\vec v$};
       \\fill[white] (0,0) circle (0.4cm);
       \\draw[thick] (0,0) circle (0.4cm) node {$Q$};
       \\end{tikzpicture} `,
@@ -653,11 +668,30 @@ export const graphics = [
       \\draw[->] (0,0,-2) -- (0,0,2) node[anchor=south] {$x$};
       \\draw[->, thick] (0,0,0) -- (2.5,0,0) node[above=10pt] {$y$};
       \\draw[thick, blue, domain=0:3.5, samples=100] plot (\\x, {1.2*sin(2*\\x r)}, 0);
-      \\foreach \\x in {0.5,1.0,...,3.5} { \\draw[->, thick, blue] (\\x,0,0) -- (\\x, {1.2*sin(2*\\x r)}, 0); } \\node[blue] at (3.8,1.3,0) {$\\vec{E}$};
+      \\foreach \\x in {0.5,1.0,...,3.5} { \\draw[->, thick, blue] (\\x,0,0) -- (\\x, {1.2*sin(2*\\x r)}, 0); }
+\\node[blue] at (3.8,1.3,0) {$\\vec{E}$};
       \\draw[thick, red, domain=0:3.5, samples=100] plot (\\x, 0, {0.8*sin(2*\\x r)});
-      \\foreach \\x in {0.5,1.0,...,3.5} { \\draw[->, thick, red] (\\x,0,0) -- (\\x, 0, {0.8*sin(2*\\x r)}); } \\node[red] at (3.8,0,1.1) {$\\vec{B}$};
+      \\foreach \\x in {0.5,1.0,...,3.5} { \\draw[->, thick, red] (\\x,0,0) -- (\\x, 0, {0.8*sin(2*\\x r)}); }
+\\node[red] at (3.8,0,1.1) {$\\vec{B}$};
       \\end{tikzpicture} `,
     libraries: [""],
     preview: "images/g_physics_dynamics_020.svg"
+  },
+  {
+    id: "g_texture_021",
+    title: "Blurred Circle Texture Pattern",
+    description: "A texture pattern featuring circles with gradient shading to create a depth effect.",
+    author: "TikzRepo",
+    categories: ["texture"],
+    keywords: ["texture", "pattern", "circles", "gradient", "shading", "diagrams", "design"],
+    tikz: ` \\begin{tikzpicture}
+            \\def\\r{0.6}
+            \\def\\gap{1.8}
+            \\foreach \\i in {0,1,2} { \\shade[shading=radial, inner color=black!50, outer color=black!1] (\\i*\\gap,0) circle (\\r); }
+            \\foreach \\i in {0,1,2} { \\fill[black!70] (\\i*\\gap,\\gap) circle (\\r); \\foreach \\k/\\op in {0/0.40,1/0.28,2/0.20,3/0.14,4/0.10,5/0.08,6/0.06,7/0.05,8/0.04,9/0.035,10/0.03,11/0.026,12/0.022} { \\fill[black, opacity=\\op] (\\i*\\gap,\\gap) circle ({\\r + 0.06*\\k}); } }
+            \\foreach \\i in {0,1,2} { \\foreach \\dx/\\op in {-6/0.05,-5/0.07,-4/0.09,-3/0.12,-2/0.16,-1/0.22,0/0.30,1/0.22,2/0.16,3/0.12,4/0.09,5/0.07,6/0.05} { \\fill[black!40, opacity=\\op] ({\\i*\\gap + 0.06*\\dx},{2*\\gap}) circle (\\r); } }
+            \\end{tikzpicture} `,
+    libraries: [""],
+    preview: "images/g_texture_021.svg"
   },
 ];

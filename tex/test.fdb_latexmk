@@ -1,15 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1766566078.28109 "/home/tobi/Desktop/sandbox/tikzbiblio/tex/test.tex" "test.pdf" "test" 1766566079.28746 0
-  "/home/tobi/Desktop/sandbox/tikzbiblio/tex/test.tex" 1766566077.94454 846 2f8d30264741ef1a8b52c99503184fd1 ""
-  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1755987285 1512 f21f83efb36853c0b70002322c1ab3ad ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1755987285 1524 d89e2d087a9828407a196f428428ef4a ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1755987285 1300 b62933e007d01cfd073f79b963c01526 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1755987285 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1755987285 1116 933a60c408fc0a863a92debe84b2d294 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1755987285 1116 25a7bf822c58caf309a702ef79f4afbb ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1755987285 36094 798f80770b3b148ceedd006d487db67c ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1755987285 35752 024fb6c41858982481f6968b5fc26508 ""
+["pdflatex"] 1766800222.05465 "/home/tobi/Desktop/repos/TikzRepo/tex/test.tex" "test.pdf" "test" 1766800222.40171 0
+  "/home/tobi/Desktop/repos/TikzRepo/tex/test.tex" 1766800221.40712 76 660b16e98a06aaa79a10f988838d29da ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1755987285 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1755987285 1016 1c2b89187d12a2768764b83b4945667c ""
   "/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1755987285 43820 1fef971b75380574ab35a0d37fd92608 ""
@@ -88,10 +79,9 @@
   "/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1755987285 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1755987285 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765040845 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765040755 2030633 2027e5759820580d0db6cb6bf290fbcf ""
-  "test.aux" 1766566079.18351 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "test.tex" 1766566077.94454 846 2f8d30264741ef1a8b52c99503184fd1 ""
+  "test.aux" 1766800222.36355 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "test.tex" 1766800221.40712 76 660b16e98a06aaa79a10f988838d29da ""
   (generated)
   "test.aux"
   "test.log"
